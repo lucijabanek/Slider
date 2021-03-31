@@ -1,0 +1,45 @@
+@mixin LoremText {
+  text-align: left;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+@mixin h2Lorem {
+  @include LoremText();
+  width: 301px;
+  height: 120px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: $h2Color;
+}
+
+@mixin pLorem {
+  @include LoremText();
+  margin-top: 20px;
+  width: 301px;
+  height: 156px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: $pColor;
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3;
+  grid-row: 1;
+  grid-row-end: 3;
+  margin-left: 20px;
+
+  h2 {
+    @include h2Lorem();
+  }
+
+  p {
+    @include pLorem();
+  }
+}

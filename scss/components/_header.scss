@@ -1,0 +1,30 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 941px;
+  margin: auto;
+  top: 0;
+}
+
+.header-box1 {
+  width: 301px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background: $HFBackground;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.header-box2 {
+  width: 621px;
+  height: 100px;
+  left: 320px;
+  top: 0px;
+  background: $HFBackground;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.header-text {
+  margin-top: 39px;
+  @include HFText();
+}

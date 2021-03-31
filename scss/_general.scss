@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $bodyBackground;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 940px;
+  height: 530px;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  object-fit: contain;
+}

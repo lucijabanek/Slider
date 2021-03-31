@@ -1,0 +1,14 @@
+footer {
+  height: 100px;
+  max-width: 941px;
+  background: $HFBackground;
+  border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  bottom: 0;
+}
+
+.footer-text {
+  padding-top: 42px;
+  margin: 0;
+  @include HFText();
+}
